@@ -2,13 +2,16 @@
 
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
+  'ngTable',
   'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
+  'user.create',
+  'user.list',
+  'user.update',
+  'shared.directivesModule',
+  'user.factory'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
-
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  //$locationProvider.hashPrefix('');
+ //$locationProvider.html5Mode(true);
+  $routeProvider.otherwise({redirectTo: '/user/list'});
 }]);

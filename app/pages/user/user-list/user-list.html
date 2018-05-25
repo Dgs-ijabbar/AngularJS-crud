@@ -1,0 +1,17 @@
+<h3 class='text-center'>User List</h3>
+<table ng-table="ctrl.tableParams" class="table" show-filter="true">
+  <tr ng-repeat="user in $data">
+    <td title="'Name'" filter="{ name: 'text'}" sortable="'name'" ng-click='ctrl.do()'>
+      {{user.name}}</td>
+    <td title="'Father Name'" filter="{ fatherName: 'text'}" sortable="'fatherName'">
+      {{user.fatherName}}</td>
+    <td title="'Date of Birth'" filter="{ dob: 'text'}" sortable="'dob'">
+      {{user.dob}}</td>
+    <td title="'Gender'" filter="{ gender: 'text'}" sortable="'gender'">
+      {{user.gender}}</td>
+      <td title="'Actions'">
+          <a class="btn btn-success" ng-click='ctrl.delete(user)'>Delete</a> 
+          <a class="btn btn-success" ng-click='ctrl.update(user)'>Edit</a> 
+        </td>
+  </tr>
+</table>

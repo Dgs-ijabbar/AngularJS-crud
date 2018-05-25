@@ -23,3 +23,26 @@
   content: "|";
   padding-right: 0.3em;
 }
+.container{
+  margin-top: 20px
+}
+.pagination{
+  margin-left: 50px;
+}
+.pagination > li {
+  padding:10px 20px;
+  border: 1px solid #80808073;
+}
+.pagination > li.active {
+  background: lightslategrey
+}
+.pagination > li.active > a  {
+ color:white
+}
+table{
+  margin: 20px;
+  width: calc(100% - 40px)!important;
+}
+h3{
+  margin-top: 20px !important
+}

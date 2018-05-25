@@ -1,0 +1,25 @@
+<div class="container">
+    <h3 class="text-center"> User Update</h3>
+    <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" ng-model="ctrl.user.name" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <label for="fatherName">Father's Name</label>
+            <input type="text" class="form-control" id="fatherName" ng-model="ctrl.user.fatherName" placeholder="Father's Name">
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" class="form-control" id="dob" ng-model="ctrl.user.dob" placeholder="Date of Birth">
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <select class="form-control" ng-model="ctrl.user.gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-success  btn-lg btn-block" ng-click="ctrl.submit()">Update</button>
+    </form>
+</div>
