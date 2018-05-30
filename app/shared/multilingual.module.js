@@ -1,4 +1,4 @@
-var multilingualModule = angular.module('multilingual', ['ngCookies', 'pascalprecht.translate','core']);
+var multilingualModule = angular.module('multilingual', ['ngCookies', 'pascalprecht.translate','core','ngSanitize']);
 
 multilingualModule.run(['$rootScope', function ($rootScope) {
   $rootScope.lang = 'en';
@@ -16,4 +16,5 @@ multilingualModule.config(['$translateProvider', function ($translateProvider) {
   $translateProvider.useLoader('languageAsyncLoader');
   $translateProvider.useLocalStorage();
   $translateProvider.useMissingTranslationHandlerLog();
+  $translateProvider.useSanitizeValueStrategy('sanitizeParameters');
 }]);

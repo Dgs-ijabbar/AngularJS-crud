@@ -19,6 +19,7 @@
     "angular-translate-storage-local": "^2.18.1",
     "angular-translate-loader-url": "^2.18.1",
     "angular-translate-loader-static-files": "^2.18.1",
-    "angular-cookies": "1.5.0"
+    "angular-cookies": "1.5.0",
+    "angular-sanitize": "1.5"
   }
 }
