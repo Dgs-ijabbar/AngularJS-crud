@@ -7,8 +7,11 @@ angular.module('myApp', [
   'user.create',
   'user.list',
   'user.update',
+  'survey',
   'shared.directivesModule',
-  'user.factory'
+  'user.factory',
+  'multilingual',
+  'core'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   //$locationProvider.hashPrefix('');

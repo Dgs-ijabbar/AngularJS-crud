@@ -13,7 +13,9 @@ directiveModule.directive('navBar', function () {
       <li class="nav-item">
         <a class="nav-link" href="#/user/create">Add User</a>
       </li>
-
+      <li class="nav-item">
+        <a class="nav-link" href="#/survey">Survey</a>
+      </li>
     </ul>
   </nav>
         `

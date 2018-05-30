@@ -3,11 +3,12 @@
 <!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html lang="en" ng-app="myApp" class="no-js">
+<html lang="{{ lang }}" ng-app="myApp" class="no-js">
 <!--<![endif]-->
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>My AngularJS App</title>
   <meta name="description" content="">
@@ -17,6 +18,7 @@
   <link rel="stylesheet" href="app.css">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" ; href="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.css">
+  <link ng-href=" assets/css/{{ default_direction }}-app.css" rel="stylesheet">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
@@ -32,20 +34,36 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+
+  <script src="bower_components/angular-translate/angular-translate.min.js"></script>
+  <script src="bower_components/angular-translate-interpolation-messageformat/angular-translate-interpolation-messageformat.min.js"></script>
+  <script src="bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.min.js"></script>
+  <script src="bower_components/angular-translate-storage-local/angular-translate-storage-local.min.js"></script>
+  <script src="bower_components/angular-translate-loader-url/angular-translate-loader-url.min.js"></script>
+  <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+  <script src="bower_components/angular-translate-handler-log/angular-translate-handler-log.min.js"></script>
+
   <script src="app.js"></script>
 
   <script src="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.js"></script>
-  
+
   <script src="pages/user/user-create/user-create.js"></script>
   <script src="pages/user/user-list/user-list.js"></script>
   <script src="pages/user/user-update/user-update.js"></script>
   <script src="pages/user/user.factory.js"></script>
+  <script src="pages/survey/survey.js"></script>
 
   <script src="shared/directive.module.js"></script>
   <script src="shared/directives/nav-bar.js"></script>
+  <script src="shared/multilingual.module.js"></script>
+  <script src="core/core.module.js"></script>
+  <script src="core/language.service.js"></script>
+
 
 </body>
 
-</html>
+</html> 

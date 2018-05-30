@@ -46,3 +46,7 @@ table{
 h3{
   margin-top: 20px !important
 }
+.language-select{
+  margin: 20px;
+  width: 200px !important;
+   }
